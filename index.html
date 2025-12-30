@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shelfie - Smart Wardrobe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>👗 Shelfie – Smart Wardrobe</h2>
+
+    <div class="form-row">
+      <input type="text" id="clothName" placeholder="Cloth name">
+      <select id="clothType">
+        <option value="Shirt">Shirt</option>
+        <option value="Trousers">Trousers</option>
+        <option value="Ethnic">Ethnic</option>
+        <option value="Casual">Casual</option>
+        <option value="Formal">Formal</option>
+      </select>
+      <input type="text" id="clothColor" placeholder="Color">
+      <select id="clothComfort">
+        <option value="loose">Loose</option>
+        <option value="fitted">Fitted</option>
+        <option value="lightweight">Lightweight</option>
+        <option value="cozy">Cozy</option>
+      </select>
+      <select id="clothOccasion">
+        <option value="meeting">Meeting</option>
+        <option value="party">Party</option>
+        <option value="casual">Casual outing</option>
+        <option value="college">College</option>
+        <option value="temple">Temple Function</option>
+        <option value="shopping">Shopping</option>
+        <option value="gym">Gym</option>
+        <option value="interview">Interview</option>
+      </select>
+
+      <input type="number" id="clothWorn" placeholder="Times worn" value="0" min="0">
+      <input type="file" id="clothImage" accept="image/*">
+      <button id="addBtn">Add Cloth</button>
+    </div>
+
+    <div class="info-row">
+      <div id="storageInfo">Storage used: 0 KB</div>
+      <button id="clearBtn" title="Clear all saved clothes">Clear All</button>
+    </div>
+
+    <div id="wardrobe"></div>
+
+    <h3>📊 Stats</h3>
+    <div id="stats"></div>
+
+    <h3>🔍 Search</h3>
+    <input type="text" id="searchInput" placeholder="Search by name or type">
+    <div id="searchResults"></div>
+
+    <h3>🎯 Suggest Outfit</h3>
+    <div class="form-row">
+      <select id="moodSelect">
+        <option value="happy">Happy</option>
+        <option value="lazy">Lazy</option>
+        <option value="energetic">Energetic</option>
+        <option value="romantic">Romantic</option>
+        <option value="professional">Professional</option>
+      </select>
+      <select id="comfortSelect">
+        <option value="loose">Loose</option>
+        <option value="fitted">Fitted</option>
+        <option value="lightweight">Lightweight</option>
+        <option value="cozy">Cozy</option>
+      </select>
+      <select id="eventSelect">
+        <option value="meeting">Meeting</option>
+        <option value="party">Party</option>
+        <option value="casual">Casual outing</option>
+        <option value="college">College</option>
+        <option value="temple">Temple Function</option>
+        <option value="shopping">Shopping</option>
+        <option value="gym">Gym</option>
+        <option value="interview">Interview</option>
+      </select>
+      <button id="suggestBtn">Suggest</button>
+    </div>
+
+    <div id="suggestionBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

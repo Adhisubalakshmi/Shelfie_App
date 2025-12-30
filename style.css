@@ -1,0 +1,87 @@
+/* background image: place wardobe.jpg in same folder */
+body {
+  font-family: Arial, sans-serif;
+  background: url("wardobe.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+.container {
+  background: rgba(255,255,255,0.94);
+  max-width: 920px;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+h2, h3 { text-align: center; margin: 8px 0; }
+.form-row {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:center;
+  margin-bottom:10px;
+}
+input[type="text"], input[type="number"], select, input[type="file"] {
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  min-width:140px;
+}
+button {
+  background: linear-gradient(90deg,#ff6b7a,#ff4d6d);
+  color:white;
+  padding:8px 12px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+.info-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin: 10px 8px;
+}
+#wardrobe {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+/* Card */
+.item-card {
+  background:white;
+  border-radius:10px;
+  padding:10px;
+  text-align:center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+/* FIX: set consistent, small image size */
+.item-card img, .suggestion-box img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius:10px;
+  margin: 4px auto;
+  display:block;
+}
+.small-btn {
+  display:inline-block;
+  margin:6px 4px 0 0;
+  padding:6px 8px;
+  font-size:0.85rem;
+  border-radius:6px;
+  border:none;
+  background:#f0f0f0;
+  cursor:pointer;
+}
+#suggestionBox {
+  margin-top:12px;
+  background:#f7f7f7;
+  padding:10px;
+  border-radius:8px;
+  min-height:64px;
+  text-align:center;
+}
